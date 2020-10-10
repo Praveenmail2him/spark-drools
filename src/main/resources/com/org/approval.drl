@@ -1,0 +1,10 @@
+package com.org.app;
+
+import com.org.app.Applicant
+
+rule "Approve Good Credit"
+  when 
+    a: Applicant(creditScore > 600)
+  then
+    a.setApproved(true);
+end 
